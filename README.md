@@ -1,168 +1,92 @@
 # 🚗 AI-Based Autonomous Navigation System
+> **An intelligent robotics simulation implementing A* Path Planning and Real-Time Analytics.**
 
-🚗 A simulation-driven AI system that mimics real-world autonomous navigation using intelligent path planning and real-time analytics.
-
-## 📌 Overview
-
-This project implements an **AI-based autonomous navigation system** using virtual simulation.
-
-A robot intelligently navigates through a grid environment, avoids obstacles, and reaches a goal using the **A* path planning algorithm**, while visualizing real-time analytics through an interactive dashboard.
+![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
+![Pygame](https://img.shields.io/badge/Library-Pygame-green.svg)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red.svg)
+![License](https://img.shields.io/badge/license-MIT-important.svg)
 
 ---
 
-## 🎯 Objective
+## 📌 Project Overview
+This system mimics real-world autonomous navigation. A robot intelligently navigates a dynamic grid environment, avoids obstacles, and reaches a target goal using the **A* Search Algorithm**. The project bridges the gap between path-planning logic and real-time data visualization.
 
-* Build an autonomous navigation system
-* Implement intelligent path planning
-* Simulate real-world robotics behavior
-* Provide real-time analytics and visualization
-
----
-
-## 🌍 Industry Relevance
-
-Used in:
-
-* 🚗 Self-driving cars (Tesla, Waymo)
-* 📦 Warehouse robots (Amazon Robotics)
-* 🚁 Drones
-* 🤖 Service robots
+### 🎬 System Demo
+| Robot Navigation (Pygame) | Analytics Dashboard (Streamlit) |
+| :---: | :---: |
+| ![Simulation GIF](assets/demo.gif) | ![Dashboard GIF](assets/dashboard_demo.gif) |
+*(Replace these paths with your actual GIF files in an assets folder)*
 
 ---
 
-## 🧠 System Architecture
+## 🚀 Key Features
 
-Environment → Perception → Path Planning → Navigation → Visualization
+### 🧠 Intelligent Navigation
+* **A* Algorithm:** Optimal pathfinding with heuristic-based search.
+* **Obstacle Avoidance:** Real-time sensor simulation to detect and bypass barriers.
+* **Dynamic Grid:** Interactive environment that updates as the robot moves.
+
+### 📊 Real-Time Analytics
+* **Live Telemetry:** Distance-to-goal tracking and system status logs.
+* **Performance Metrics:** Heatmaps showing A* node exploration.
+* **Interactive UI:** A Streamlit-powered dashboard for system monitoring.
 
 ---
 
 ## ⚙️ Tech Stack
 
-* Python
-* NumPy
-* Matplotlib
-* Pygame
-* Streamlit
-* A* Algorithm
+| Category | Tools |
+| :--- | :--- |
+| **Language** | Python 3.11 |
+| **Simulation** | Pygame, NumPy |
+| **Analytics** | Matplotlib, Streamlit |
+| **Algorithm** | A* (A-Star) |
 
 ---
 
-## 🚀 Features
-
-### Core System
-
-* Grid-based simulation
-* A* path planning
-* Obstacle avoidance
-* Robot navigation
-
-### Dashboard (Streamlit UI)
-
-* Real-time simulation
-* Live distance graph
-* System metrics
-* Progress tracking
-* System status indicator
-
-### Analytics
-
-* Path visualization
-* Heatmap representation
-* Performance analysis
-* A* exploration visualization
-
----
-
-## 🖥️ Dashboard Preview
-
-* Left: Simulation grid
-* Right: Graph + metrics
-* Sidebar: Controls + system status
-
----
-
-## 📊 Analytics Included
-
-* 📈 Distance vs Time
-* 🧠 A* explored nodes
-* 🔥 Heatmap visualization
-* ⚡ Performance vs obstacle density
-
----
-
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/your-username/AI-Autonomous-Navigation-System.git
-cd AI-Autonomous-Navigation-System
-
-python -m venv venv
-venv\Scripts\activate
-
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Run Project
-
-### Simulation
-
-```bash
-python main.py
-```
-
-### Dashboard
-
-```bash
-streamlit run streamlit_app.py
-```
-
----
+## 🖥️ System Architecture
+```mermaid
+graph LR
+    A[Environment] --> B[Perception/Sensors]
+    B --> C[A* Path Planning]
+    C --> D[Robot Navigation]
+    D --> E[Real-Time Visualization]
 
 ## 📸 Screenshots
 
-(Add your images)
+#### 📍 Simulation Environment
+![Simulation Grid](assets/simulation_grid.png)
 
-* Simulation Grid
-* Dashboard UI
-* Performance Graph
-* Heatmap
+#### 📈 Dashboard & Performance Graphs
+![Dashboard UI](assets/dashboard_ui.png)
 
----
-
-## 🎥 Demo
-
-(Add video link)
+#### 🧠 A* Search Heatmap
+![Heatmap](assets/heatmap.png)
 
 ---
 
-## 🔮 Future Enhancements
+## 🛠️ Installation & Usage
 
-* YOLO object detection
-* Reinforcement learning
-* ROS integration
-* CARLA simulation
-* Real hardware deployment
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/Vani691/AI-Autonomus-Navigation-System.git](https://github.com/Vani691/AI-Autonomus-Navigation-System.git)
+   cd AI-Autonomus-Navigation-System
 
----
+#### Set up Virtual Environment
+```bash
+python -m venv .venv
+.\.venv\Scripts\activate   
+pip install -r requirements.txt
+python main.py
+streamlit run streamlit_app.py
 
-## 📚 Learning Outcomes
 
-* Path planning algorithms
-* Autonomous system design
-* Real-time data visualization
-* Simulation-based AI development
+####🔮 Future Roadmap
+[ ] Object Detection: Integrate YOLOv8 for visual obstacle identification.
 
----
+[ ] RL Integration: Implement Reinforcement Learning for path optimization.
 
-## 👨‍💻 Author
+[ ] ROS2: Bridge the simulation with Robot Operating System for hardware deployment.
 
-**Shravani Mane**
-CSE - AIML Engineering Student
-
----
-
-## ⭐ Support
-
-If you found this project useful, give it a ⭐ on GitHub!
+#### 👨‍💻 Author
+Shravani Mane CSE - AIML Engineering Student
