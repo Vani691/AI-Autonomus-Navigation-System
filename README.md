@@ -14,7 +14,7 @@ This system mimics real-world autonomous navigation. A robot intelligently navig
 ### 🎬 System Demo
 | Robot Navigation (Pygame) | Analytics Dashboard (Streamlit) |
 | :---: | :---: |
-| ![Simulation GIF](assets/videos/working.gif) | ![Dashboard GIF](assets/images/dashboard.png) |
+| ![Simulation GIF](assets/videos/working.gif) | ![Dashboard](assets/images/dashboard.png) 
 
 
 ---
@@ -44,46 +44,92 @@ This system mimics real-world autonomous navigation. A robot intelligently navig
 
 ---
 
-### 🖥️ System Architecture
+## 🖥️ System Architecture
+
 ```mermaid
 graph LR
-    A[Environment] --> B[Perception/Sensors]
+    A[Environment] --> B[Perception / Sensors]
     B --> C[A* Path Planning]
     C --> D[Robot Navigation]
     D --> E[Real-Time Visualization]
+```
+
+---
 
 ## 📸 Screenshots
 
-#### 📈 Dashboard & Performance Graphs
+### 📈 Dashboard & Performance Graphs
+
 ![Dashboard UI](assets/images/dashboard.png)
 
-#### 🧠 A* Search Heatmap
+### 🧠 A* Search Heatmap
+
 ![Heatmap](assets/images/Heatmap.png)
 
 ---
 
 ## 🛠️ Installation & Usage
 
-1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/Vani691/AI-Autonomus-Navigation-System.git](https://github.com/Vani691/AI-Autonomus-Navigation-System.git)
-   cd AI-Autonomus-Navigation-System
+### 1️⃣ Clone the Repository
 
-#### Set up Virtual Environment
+```bash
+git clone https://github.com/Vani691/AI-Autonomous-Navigation-System.git
+cd AI-Autonomous-Navigation-System
+```
+
+---
+
+### 2️⃣ Set Up Virtual Environment
+
+#### Windows
+
 ```bash
 python -m venv .venv
-.\.venv\Scripts\activate   
+.\.venv\Scripts\activate
+```
+
+#### Mac/Linux
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+---
+
+### 3️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
+
+---
+
+### 4️⃣ Run the Project
+
+#### Run Simulation
+
+```bash
 python main.py
+```
+
+#### Run Dashboard
+
+```bash
 streamlit run streamlit_app.py
+```
 
+---
 
-####🔮 Future Roadmap
-[ ] Object Detection: Integrate YOLOv8 for visual obstacle identification.
+## 🔮 Future Roadmap
 
-[ ] RL Integration: Implement Reinforcement Learning for path optimization.
+* [ ] 🎯 Object Detection: Integrate YOLOv8 for obstacle detection
+* [ ] 🧠 Reinforcement Learning: Optimize path planning dynamically
+* [ ] 🤖 ROS2 Integration: Connect simulation to real robot hardware
 
-[ ] ROS2: Bridge the simulation with Robot Operating System for hardware deployment.
+---
 
-#### 👨‍💻 Author
-Shravani Mane CSE - AIML Engineering Student
+## 👨‍💻 Author
+
+**Shravani Mane**
+CSE - AIML Engineering Student
