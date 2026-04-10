@@ -14,8 +14,8 @@ This system mimics real-world autonomous navigation. A robot intelligently navig
 ### 🎬 System Demo
 | Robot Navigation (Pygame) | Analytics Dashboard (Streamlit) |
 | :---: | :---: |
-| ![Simulation GIF](assets/demo.gif) | ![Dashboard GIF](assets/dashboard_demo.gif) |
-*(Replace these paths with your actual GIF files in an assets folder)*
+| ![Simulation GIF](assets/dashboard.png) | ![Dashboard GIF](assets/working.gif) |
+
 
 ---
 
@@ -54,14 +54,11 @@ graph LR
 
 ## 📸 Screenshots
 
-#### 📍 Simulation Environment
-![Simulation Grid](assets/simulation_grid.png)
-
 #### 📈 Dashboard & Performance Graphs
-![Dashboard UI](assets/dashboard_ui.png)
+![Dashboard UI](assets/dashboard.png)
 
 #### 🧠 A* Search Heatmap
-![Heatmap](assets/heatmap.png)
+![Heatmap](assets/Heatmap.png)
 
 ---
 
